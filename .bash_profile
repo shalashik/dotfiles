@@ -74,18 +74,6 @@ if [ -x "$(command -v kubectl)" ]; then
   source <(kubectl completion bash)
 fi
 
-# Use brew-installed PHP binaries.
-export PATH="$brew_prefix/opt/php70/bin:$PATH"
-
-# Use nvm.
-# export NVM_DIR="$HOME/.nvm"
-# . "$brew_prefix/opt/nvm/nvm.sh"
-
-# Use rbenv.
-# if [ -f /usr/local/bin/rbenv ]; then
-#   eval "$(rbenv init -)"
-# fi
-
 # Python settings.
 export PYTHONPATH="/usr/local/lib/python2.7/site-packages"
 
@@ -150,5 +138,3 @@ function blt() {
     return 1
   fi
 }
-export PATH="/usr/local/opt/php@7.1/bin:$PATH"
-export PATH="/usr/local/opt/php@7.1/sbin:$PATH"

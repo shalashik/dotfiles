@@ -4,7 +4,7 @@ set cursorline          " highlight the current line
 " set ruler             " show line number in bar
 set nobackup            " don't create pointless backup files; Use VCS instead
 set autoread            " watch for file changes
-set number              " show line numbers
+" set number              " show line numbers
 set showcmd             " show selection metadata
 set showmode            " show INSERT, VISUAL, etc. mode
 set showmatch           " show matching brackets
@@ -50,3 +50,18 @@ inoremap {      {}<Left>
 inoremap {<CR>  {<CR>}<Esc>O
 inoremap {{     {
 inoremap {}     {}
+
+" Restore previous file position
+set viminfo='10,\"100,:20,%,n~/.viminfo
+
+function! ResCur()
+  if line("'\"") <= line("$")
+    normal! g`"
+    return 1
+  endif
+endfunction
+
+augroup resCur
+  autocmd!
+  autocmd BufWinEnter * call ResCur()
+augroup END``
