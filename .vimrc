@@ -17,8 +17,8 @@ filetype plugin on      " enable filetype-specific plugins
 " colorscheme cobalt      " requires cobalt.vim to be in ~/.vim/colors
 
 " column-width visual indication
-let &colorcolumn=join(range(81,999),",")
-highlight ColorColumn ctermbg=235 guibg=#001D2F
+" let &colorcolumn=join(range(81,999),",")
+" highlight ColorColumn ctermbg=235 guibg=#001D2F
 
 " tabs and indenting
 set autoindent          " auto indenting
@@ -29,7 +29,7 @@ set shiftwidth=2        " 2 spaces for indentation
 
 " bells
 set noerrorbells        " turn off audio bell
-set visualbell          " but leave on a visual bell
+" set visualbell          " but leave on a visual bell
 
 " search
 set hlsearch            " highlighted search results
