@@ -9,7 +9,7 @@ export GOPATH=~/golang
 export PATH=$GOPATH/bin:$PATH
 
 #my aliases
-pocean='sshuttle -dns -r root@104.236.208.29 0.0.0.0/0'
+alias pocean='sshuttle -dns -r root@104.236.208.29 0.0.0.0/0'
 
 
 # Nicer prompt.
