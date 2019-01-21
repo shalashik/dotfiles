@@ -9,8 +9,8 @@ export GOPATH=~/golang
 export PATH=$GOPATH/bin:$PATH
 
 #my aliases
-alias pocean='sshuttle -dns -r root@104.236.208.29 0.0.0.0/0'
-
+alias pocean='sshuttle --dns -r root@104.236.208.29 0.0.0.0/0'
+alias ll='ls -la'
 
 # Nicer prompt.
 export PS1="\[\e[0;32m\]\]\[\] \[\e[1;32m\]\]\t \[\e[0;2m\]\]\w \[\e[0m\]\]\[$\] "
