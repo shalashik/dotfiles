@@ -7,9 +7,12 @@
 
 export GOPATH=~/golang
 export PATH=$GOPATH/bin:$PATH
+export JAVA_HOME=$(/usr/libexec/java_home)
+export GRADLE_USER_HOME=/Users/shalashik/devapps/gradle
 
 #my aliases
-alias pocean='sshuttle --dns -r root@104.236.208.29 0.0.0.0/0'
+alias pocean='sshuttle --dns -r root@134.209.32.115 0.0.0.0/0'
+alias firefoxjsconsole='/Applications/Firefox.app/Contents/MacOS/firefox-bin -jsconsole'
 alias ll='ls -la'
 
 # Nicer prompt.
@@ -20,7 +23,7 @@ export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
 
 # Custom $PATH with extra locations.
-export PATH=/usr/local/bin:/usr/local/sbin:$HOME/bin:/usr/local/git/bin:$HOME/.composer/vendor/bin:$PATH
+export PATH=/usr/local/bin:/usr/local/sbin:$HOME/.mvn/bin:$HOME/bin:/usr/local/git/bin:$HOME/.composer/vendor/bin:$PATH
 
 # Include alias file (if present) containing aliases for ssh, etc.
 if [ -f ~/.bash_aliases ]
